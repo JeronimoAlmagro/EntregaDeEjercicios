@@ -2,30 +2,42 @@
 print("Hola Mundo!")
 
 #Actividad 2
+##Pedimos al usuario ingresar su nombre
 nombre = input("Como te llamas?: ")
+##Mostramos el nombre ingresado en pantalla
 print(f"Hola {nombre}!")
 
 #Actividad 3
+##Pedimos al usuario que ingrese su nombre, apellido, edad y lugar de residencia.
 nombre = input("Nombre: ")
 apellido = input("Apellido: ")
 edad = int(input("Edad: "))
 lugarderesidencia = input("Lugar de Residencia: ")
+##Mostramos los datos ingresados por el usuario
 print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {lugarderesidencia}")
 
 #Actividad 4
+##Pedimos al usuario que ingrese un radio para un circulo
 radio = int(input("Ingrese el radio del circulo: "))
+##Hacemos el calculo entre el radio del circulo ingresado para sacar el area y el perimetro
 area = 3.14 * radio**2
 perimetro = 2 * 3.14 * radio
+##Mostramos en pantalla el area y el perimetro del circulo
 print(f"El area del circulo es de: {area}")
 print(f"El perimetro del circulo es de: {perimetro}")
 
 #Actividad 5
+##Pedimos al usuario que ingrese una x cantidad de segundos
 segundos = int(input("Ingrese una cantidad de segundos: "))
+##Pasamos los segundos ingresados a horas
 hora = segundos / 3600
+##Mostramos cuantas horas son el total los segundos ingresados anteriormente.
 print(f"{segundos} segundos son {hora} horas")
 
 #Actividad 6
+##Le pedimos al usuario que ingrese un numero
 numero = int(input("Ingrese un numero: "))
+#Mostramos en pantalla la tabla del 1 al 10 del numero ingresado
 print(f"{numero} x 1 = {numero * 1}")
 print(f"{numero} x 2 = {numero * 2}")
 print(f"{numero} x 3 = {numero * 3}")
@@ -38,32 +50,44 @@ print(f"{numero} x 9 = {numero * 9}")
 print(f"{numero} x 10 = {numero * 10}")
 
 #Actividad 7
+##Le pedimos al usuario que ingrese dos numeros enteros mayores a 0
 numeroA = int(input("Ingrese un numero entero mayor a 0: "))
 numeroB = int(input("Ingrese otro numero entero mayor a 0: "))
+##Realizamos la suma, resta, multiplicacion y division de los dos numeros ingresados.
 suma = numeroA + numeroB
 resta = numeroA - numeroB
 multiplicacion = numeroA * numeroB
 division = numeroA / numeroB
+#Mostramos en pantalla el resultado de los calculos
 print(f"{numeroA} + {numeroB} = {suma}")
 print(f"{numeroA} - {numeroB} = {resta}")
 print(f"{numeroA} x {numeroB} = {multiplicacion}")
 print(f"{numeroA} / {numeroB} = {division}")
 
 #Actividad 8
+##Pedimos al usuario que ingrese su altura y peso.
 altura = float(input("Ingrese su altura: "))
 peso = float(input("Ingrese su peso: "))
+##Sacamos el IMC del usuario
 IMC = peso / (altura**2)
+##Mostramos en pantallas el IMC del usuario
 print(f"Tu indice de masa corporal es de {IMC}")
 
 #Actividad 9
+##Pedimos al usuario que ingrese cuantos grados hacen actualmente usando Celcius
 gradosCelcius = int(input("Ingrese cuantos grados hacen: "))
+##Hacemos un calculo para pasar de grados Celcius a Fahrenheit
 gradosfahrenheit = 9 / 5 * gradosCelcius + 32
+##Mostramos el equivalente de los grados celcius a grados Fahrenheit
 print(f"El equivalente de {gradosCelcius} grados celcius en grados fahrenheit es de {gradosfahrenheit}")
 
 #Actividad 10
+##Pedimos al usuario que ingrese tres numeros enteros
 numeroA = int(input("Ingrese un numero entero: "))
 numeroB = int(input("Ingrese un segundo numero entero: "))
 numeroC = int(input("Ingrese un tercer numero entero: "))
+##Hacemos dos calculos, donde sumamos los tres numeros pedidos para luego sacar el promedio total
 suma = numeroA + numeroB + numeroC
 promedio = suma / 3
+##Mostramos el promedio entre los tres numeros ingresados.  
 print(f"El promedio entre {numeroA}, {numeroB} y {numeroC} es {promedio}")
