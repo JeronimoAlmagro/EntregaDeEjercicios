@@ -152,23 +152,15 @@ aprobados = {
     "Parcial 2": {"Sofía", "Pedro", "Juan", "Carla"}
 }
 
-# Conjuntos con los alumnos que aprobaron cada parcial
-parcial1 = aprobados["Parcial 1"]
-parcial2 = aprobados["Parcial 2"]
+# Alumnos que aprobaron ambos parciales (.intersection)
+print(f"Alumnos que aprobaron ambos parciales: {aprobados['Parcial 1'].intersection(aprobados['Parcial 2'])}")
 
-# Alumnos que aprobaron ambos parciales (interseccion)
-ambos = parcial1 & parcial2
+# Alumnos que aprobaron solo uno de los dos parciales (.difference)
+print(f"Alumnos que solamente aprobaron el primer parcial: {aprobados['Parcial 1'].difference(aprobados['Parcial 2'])}")
+print(f"Alumnos que solamente aprobaron el segundo parcial: {aprobados['Parcial 2'].difference(aprobados['Parcial 1'])}")
 
-# Alumnos que aprobaron solo uno de los dos parciales (simetrica diferencia)
-solo_uno = parcial1 ^ parcial2
-
-# Alumnos que aprobaron al menos un parcial (union)
-al_menos_uno = parcial1 | parcial2
-
-# Muestra los resultados
-print("Aprobaron ambos parciales:", ambos)
-print("Aprobaron solo uno de los dos:", solo_uno)
-print("Aprobaron al menos un parcial:", al_menos_uno)
+# Alumnos que aprobaron al menos un parcial (.union)
+print(f"Alumnos que aprobaron al menos uno de los dos parciales: {aprobados['Parcial 1'].union(aprobados['Parcial 2'])}")
 
 
 ##Ejercicio 8
